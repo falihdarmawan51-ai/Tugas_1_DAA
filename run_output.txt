@@ -1,0 +1,72 @@
+Jumlah buku (judul unik) yang dimuat: 13087
+
+>>> DEMO: data ADA
+=== Linear Search ===
+Kata kunci (judul) : Memorials
+Status             : DITEMUKAN
+Indeks             : 6543
+ID Buku            : Eq0PEQAAQBAJ
+Judul              : Memorials
+Penulis            : Richard Chizmar
+Kategori           : Fiction
+Rating             : belum ada rating
+Harga              : tidak tersedia
+Jumlah perbandingan: 6544
+Waktu eksekusi     : 1.023929 ms
+
+=== Binary Search ===
+Kata kunci (judul) : Memorials
+Status             : DITEMUKAN
+Indeks             : 6543
+ID Buku            : Eq0PEQAAQBAJ
+Judul              : Memorials
+Penulis            : Richard Chizmar
+Kategori           : Fiction
+Rating             : belum ada rating
+Harga              : tidak tersedia
+Jumlah perbandingan: 1
+Waktu eksekusi     : 0.001783 ms
+
+>>> DEMO: data TIDAK ada
+=== Linear Search ===
+Kata kunci (judul) : Buku Fiktif Yang Tidak Pernah Ada
+Status             : TIDAK DITEMUKAN
+Informasi          : Buku dengan judul 'Buku Fiktif Yang Tidak Pernah Ada' tidak ada dalam data.
+Jumlah perbandingan: 13087
+Waktu eksekusi     : 2.098294 ms
+
+=== Binary Search ===
+Kata kunci (judul) : Buku Fiktif Yang Tidak Pernah Ada
+Status             : TIDAK DITEMUKAN
+Informasi          : Buku dengan judul 'Buku Fiktif Yang Tidak Pernah Ada' tidak ada dalam data.
+Jumlah perbandingan: 14
+Waktu eksekusi     : 0.054560 ms
+
+>>> PENGUJIAN n = 100, 1.000, 10.000
+      n | Algoritma      | Skenario         |  Operasi |   Waktu (ms)
+----------------------------------------------------------------------
+    100 | Linear Search  | Awal             |        1 |     0.000532
+    100 | Linear Search  | Tengah           |       50 |     0.001803
+    100 | Linear Search  | Akhir            |      100 |     0.003212
+    100 | Linear Search  | Tidak ditemukan  |      100 |     0.003110
+    100 | Binary Search  | Awal             |        6 |     0.000893
+    100 | Binary Search  | Tengah           |        1 |     0.000564
+    100 | Binary Search  | Akhir            |        7 |     0.001019
+    100 | Binary Search  | Tidak ditemukan  |        7 |     0.001012
+   1000 | Linear Search  | Awal             |        1 |     0.000563
+   1000 | Linear Search  | Tengah           |      500 |     0.018568
+   1000 | Linear Search  | Akhir            |     1000 |     0.049260
+   1000 | Linear Search  | Tidak ditemukan  |     1000 |     0.048906
+   1000 | Binary Search  | Awal             |        9 |     0.001135
+   1000 | Binary Search  | Tengah           |        1 |     0.000526
+   1000 | Binary Search  | Akhir            |       10 |     0.001411
+   1000 | Binary Search  | Tidak ditemukan  |       10 |     0.001678
+  10000 | Linear Search  | Awal             |        1 |     0.000846
+  10000 | Linear Search  | Tengah           |     5000 |     0.430002
+  10000 | Linear Search  | Akhir            |    10000 |     1.578578
+  10000 | Linear Search  | Tidak ditemukan  |    10000 |     1.511082
+  10000 | Binary Search  | Awal             |       13 |     0.001705
+  10000 | Binary Search  | Tengah           |        1 |     0.000561
+  10000 | Binary Search  | Akhir            |       14 |     0.001786
+  10000 | Binary Search  | Tidak ditemukan  |       14 |     0.002039
+Grafik disimpan: grafik_pengujian.png
